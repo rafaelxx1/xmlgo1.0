@@ -1,0 +1,2697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <application id="profile" name="maestro (secondary)">
+    <interface id="fci">
+      <profile_data>
+        <dataElement id="emv.fci.apppriorityindicator">
+          <name>Application Priority Indicator</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>87</tag>
+          <value>02</value>
+          <encrypt>False</encrypt>
+          <commentary>Priority for secondary application</commentary>
+        </dataElement>
+        <dataElement id="emv.fci.applabel">
+          <name>Application Label</name>
+          <type>a1-16</type>
+          <outputType>h</outputType>
+          <tag>50</tag>
+          <value>4D61657374726F</value>
+          <encrypt>False</encrypt>
+          <commentary>Maestro</commentary>
+        </dataElement>
+        <dataElement id="emv.fci.dfname">
+          <name>Dedicated File Name</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>84</tag>
+          <value>A0000000043060</value>
+          <encrypt>False</encrypt>
+          <commentary>Maestro AID</commentary>
+        </dataElement>
+        <dataElement id="emvnotauth.fci.thirdpartydata">
+          <name>Third Party Data</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F6E</tag>
+          <value>00760000303000</value>
+          <encrypt>False</encrypt>
+          <commentary>Country code for Brazil,Unique Identifier: '0000',Device Type: 20 - Card,Proprietary Data: '00' when unused,Update Device Type to 00 - Card</commentary>
+        </dataElement>
+        <dataElement id="mcalogsh.fci.logentry">
+          <name>Log Entry</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F4D</tag>
+          <value>0B0A</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value</commentary>
+        </dataElement>
+        <dataElement id="emvapplprefname.fci.apppreferredname">
+          <name>Application Preferred Name</name>
+          <type>a16</type>
+          <outputType>h</outputType>
+          <tag>9F12</tag>
+          <value>4D61657374726F</value>
+          <encrypt>False</encrypt>
+          <commentary>By default, set to application label 'Maestro'. Alternative value should be defined by issuer in card sample.</commentary>
+        </dataElement>
+        <dataElement id="emvapplprefname.fci.issuercodetableindex">
+          <name>Issuer Code Table Index</name>
+          <type>n2</type>
+          <outputType>h</outputType>
+          <tag>9F11</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to ISO/IEC 8859 Part 01: Latin-1 Western European</commentary>
+        </dataElement>
+        <dataElement id="emvlanguagepref.fci.languagepreference">
+          <name>Language Preference</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>5F2D</tag>
+          <value>7074656E6573</value>
+          <encrypt>False</encrypt>
+          <commentary>Language 1 = 'pt' for Portuguese,Language 2 = 'en' for English,Language 3 = 'es' for Spanish, Castilian</commentary>
+        </dataElement>
+      </profile_data>
+    </interface>
+    <interface id="internal">
+      <issuance_data>
+        <dataElement id="emvnonmobilesh.internal.alcd">
+          <name>Application Life Cycle Data</name>
+          <type>var.8</type>
+          <outputType>h</outputType>
+          <tag>9F7E</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcash.internal.referencepin">
+          <name>Reference PIN</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcalogsh.internal.logdatatable">
+          <name>Log Data Table</name>
+          <type>var.9</type>
+          <outputType>h</outputType>
+          <tag>DE</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcaxdaorpinkeysh.internal.lengthoficcpublickeymodulus">
+          <name>Length of ICC Public Key Modulus</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcaxdaorpinkeysh.internal.lengthoficcpinenciphpublickeymodulus">
+          <name>Length of ICC PIN Encipherment Public Key Modulus</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcadssh.internal.dspk">
+          <name>Data Storage Partial Key</name>
+          <type>var.12</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcadssh.internal.dsnbrofslot">
+          <name>Data Storage Number of Slots</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcalinkappsh.internal.linkedapplindex">
+          <name>Linked Application Index</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF73</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.internal.afl">
+          <name>Application File Locator (Contact)</name>
+          <type>n</type>
+          <outputType>h</outputType>
+          <tag>94</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcact.internal.acmasterkey">
+          <name>AC Master Key (Contact)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcact.internal.smimasterkey">
+          <name>SMI Master Key (Contact)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcact.internal.smcmasterkey">
+          <name>SMC Master Key (Contact)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcact.internal.iccdynamicnbrmasterkey">
+          <name>ICC Dynamic Number Master Key (Contact)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcact.internal.keyderivationindex">
+          <name>Key Derivation Index (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvnonmobilecl.internal.afl">
+          <name>Application File Locator (Contactless)</name>
+          <type>n</type>
+          <outputType>h</outputType>
+          <tag>D9</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.acmasterkey">
+          <name>AC Master Key (Contactless)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.smimasterkey">
+          <name>SMI Master Key (Contactless)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.smcmasterkey">
+          <name>SMC Master Key (Contactless)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.iccdynamicnbrmasterkey">
+          <name>ICC Dynamic Number Master Key (Contactless)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.keyderivationindex">
+          <name>Key Derivation Index (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.readrecordfilter">
+          <name>Read Record Filter (Contactless)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>DF40</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+      </issuance_data>
+      <profile_data>
+        <dataElement id="emvnonmobilesh.internal.cdol1relateddatalength">
+          <name>CDOL1 Related Data Length</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>C7</tag>
+          <value>42</value>
+          <encrypt>False</encrypt>
+          <commentary>Length for M/Chip Advance</commentary>
+        </dataElement>
+        <dataElement id="emvnonmobilesh.internal.pintrycounter">
+          <name>PIN Try Counter</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>9F17</tag>
+          <value>03</value>
+          <encrypt>False</encrypt>
+          <commentary>Offline PIN is supported, same value as PIN Try Limit</commentary>
+        </dataElement>
+        <dataElement id="emvnonmobilesh.internal.previoustxnhistory">
+          <name>Previous Transaction History</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>default=00</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.atclimit">
+          <name>Application Transaction Counter Limit</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag />
+          <value>4E20</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of transactions processed by the application to 20.000 (='4E20') for security reasons</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc1currcode">
+          <name>Accumulator 1 Currency Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>C9</tag>
+          <value>0999</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to No Currency for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc1currconvtable">
+          <name>Accumulator 1 Currency Conversion Table</name>
+          <type>var.25</type>
+          <outputType>h</outputType>
+          <tag>D1</tag>
+          <value>09990001000999000100099900010009990001000999000100</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to dummy value for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc1lowerlimit">
+          <name>Accumulator 1 Lower Limit</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>CA</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for online-only profile</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc1upperlimit">
+          <name>Accumulator 1 Upper Limit</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>CB</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for online-only profile</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc2currcode">
+          <name>Accumulator 2 Currency Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF16</tag>
+          <value>0999</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to No Currency for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc2currconvtable">
+          <name>Accumulator 2 Currency Conversion Table</name>
+          <type>var.25</type>
+          <outputType>h</outputType>
+          <tag>DF17</tag>
+          <value>09990001000999000100099900010009990001000999000100</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to dummy value for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc2lowerlimit">
+          <name>Accumulator 2 Lower Limit</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF18</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc2upperlimit">
+          <name>Accumulator 2 Upper Limit</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF19</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.additionalchecktable">
+          <name>Additional Check Table</name>
+          <type>var.18</type>
+          <outputType>h</outputType>
+          <tag>D3</tag>
+          <value>000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.counter1lowerlimit">
+          <name>Counter 1 Lower Limit</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>9F14</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for online-only profile</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.counter1upperlimit">
+          <name>Counter 1 Upper Limit</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>9F23</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for online-only profile</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.counter2lowerlimit">
+          <name>Counter 2 Lower Limit</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF1F</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for unused counter</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.counter2upperlimit">
+          <name>Counter 2 Upper Limit</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF21</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for unused counter</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.crmcountrycode">
+          <name>Card Risk Management Country Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>C8</tag>
+          <value>0076</value>
+          <encrypt>False</encrypt>
+          <commentary>Country code for Brazil</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.cryptoversionnbr2x">
+          <name>Cryptogram Version Number V2.x</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>default=00</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.defaultarpc">
+          <name>Default ARPC Response Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>D6</tag>
+          <value>0010</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value to approve online transactions and do not reset counters</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.interfaceenableswitch">
+          <name>Interface Enabling Switch</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF30</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Enable only the contact interface</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.mtacurrencycode">
+          <name>Maximum Transaction Amount Currency Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF24</tag>
+          <value>0999</value>
+          <encrypt>False</encrypt>
+          <commentary>No currency code as Maximum Transaction Amount check is not used</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.nbrofdaysofflinelimit">
+          <name>Number of Days Offline Limit</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF27</tag>
+          <value>0000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=0000</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.pintrylimit">
+          <name>PIN Try Limit</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>C6</tag>
+          <value>03</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to 3 offline PIN attempts (a value of 3 or more can be used in card sample)</commentary>
+        </dataElement>
+        <dataElement id="mcalogsh.internal.logformat">
+          <name>Log Format</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F4F</tag>
+          <value>9F27019F02065F2A029A039F36029F5206DF3E019F21039F7C14</value>
+          <encrypt>False</encrypt>
+          <commentary>Default value for M/Chip Advance (up to four additional DOL elements (tag and length) can be added by issuer)</commentary>
+        </dataElement>
+        <dataElement id="mcapinencsh.internal.pindecipherrorcounterlimit">
+          <name>PIN Decipherments Error Counter Limit</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF36</tag>
+          <value>01F4</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of PIN decipherment errors to 500 (='01F4') for security reasons</commentary>
+        </dataElement>
+        <dataElement id="mcadssh.internal.dsmgmtcontrol">
+          <name>Data Storage Management Control</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF41</tag>
+          <value>20</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable integrated data storage</commentary>
+        </dataElement>
+        <dataElement id="mca123sh.internal.commoncurrconvtable">
+          <name>Common Currency Conversion Table</name>
+          <type>var.100</type>
+          <outputType>h</outputType>
+          <tag>D2</tag>
+          <value>09990001000999000100099900010009990001000999000100099900010009990001000999000100099900010009990001000999000100099900010009990001000999000100099900010009990001000999000100099900010009990001000999000100</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to dummy value for unused conversion table</commentary>
+        </dataElement>
+        <dataElement id="emvct.internal.aip">
+          <name>Application Interchange Profile (Contact)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>82</tag>
+          <value>3900</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value when CDA &amp; DDA are supported</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.appcontrol">
+          <name>Application Control (Contact)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>D5</tag>
+          <value>8C008200C602</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for semi grade card profile, Mastercard Proprietary Session Key Derivation (SKD), transaction log, M/Chip 4 host backwards compatibility,Set bit 'Offline Plaintext PIN Verification' as Offline Plaintext PIN is supported,Set bit 'Offline Encrypted PIN Verification' as Offline Enciphered PIN is supported,Set bit 'Enable Alternate Interface After TC Generated' to enable the contactless interface after the first approved contact transaction</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.ciacdecline">
+          <name>Card Issuer Action Code (Contact) - Decline</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>C3</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.ciacdefault">
+          <name>Card Issuer Action Code (Contact) - Default</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>C4</tag>
+          <value>7F5000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value to decline offline when upper limits are exceeded,Set bit 'International Transaction' for online-only profile,Set bit 'Domestic Transaction' for online-only profile,Set bit 'Unable To Go Online Indicated' for online-only profile,Set bit 'Offline PIN Verification Failed' as Offline PIN is supported,Set bit 'PIN Try Limit Exceeded' as Offline PIN is supported,Set bit 'Terminal Erroneously Considers Offline PIN OK' as Offline PIN is supported,Set bit 'Offline PIN Verification not Performed' as Offline PIN is supported</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.ciaconline">
+          <name>Card Issuer Action Code (Contact) - Online</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>C5</tag>
+          <value>3FFB00</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value to send transaction online when limits are exceeded,Set bit 'International Transaction' to send international transaction online,Set bit 'Domestic Transaction' to send domestic transaction online,Set bit 'Offline PIN Verification not Performed' as Offline PIN is supported,Set bit 'Offline PIN Verification Failed' as Offline PIN is supported,Set bit 'PIN Try Limit Exceeded' as Offline PIN is supported,Set bit 'Terminal Erroneously Considers Offline PIN OK' as Offline PIN is supported</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.acc1control">
+          <name>Accumulator 1 Control (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF11</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Accumulator 1 for online-only profile, but include accumulator in IApD for M/Chip 4 host backwards compatibility</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.acc1cvrdependencydata">
+          <name>Accumulator 1 CVR Dependency Data (Contact)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF28</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.acc2control">
+          <name>Accumulator 2 Control (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF14</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Accumulator 2 for contact transactions</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.acc2cvrdependencydata">
+          <name>Accumulator 2 CVR Dependency Data (Contact)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2A</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.counter1control">
+          <name>Counter 1 Control (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF1A</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Counter 1 for online-only profile, but include counter in IApD for M/Chip 4 host backwards compatibility</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.counter1cvrdependencydata">
+          <name>Counter 1 CVR Dependency Data (Contact)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2C</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.counter2control">
+          <name>Counter 2 Control (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF1D</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Counter 2 for contact transactions</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.counter2cvrdependencydata">
+          <name>Counter 2 CVR Dependency Data (Contact)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2E</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.cvrissuerdiscretionarydata">
+          <name>CVR Issuer Discretionary Data (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF3C</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to a dummy value when issuer host requires a backward compatibility mode</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.interfaceidentifier">
+          <name>Interface Identifier (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF3E</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Contact interface identifier</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.mtacmv">
+          <name>Maximum Transaction Amount CVM (Contact)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF22</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.mtanocmv">
+          <name>Maximum Transaction Amount NoCVM (Contact)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF25</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.acsessionkeycounterlimit">
+          <name>AC Session Key Counter Limit (Contact)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF3A</tag>
+          <value>4E20</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of AC Session Key derivations over the contact interface to 20.000 (= '4E20') for security reasons</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.smisessionkeycounterlimit">
+          <name>SMI Session Key Counter Limit (Contact)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF32</tag>
+          <value>0400</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of SMI Session Key derivations over the contact interface that are not followed by a successful validation of a Secure Messaging MAC to 1.024 (= '0400') for security reasons</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.readrecordfilter">
+          <name>Read Record Filter (Contact)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>DF3F</tag>
+          <value>00000000</value>
+          <encrypt>False</encrypt>
+          <commentary>No records filtered over the contact interface</commentary>
+        </dataElement>
+        <dataElement id="emvnonmobilecl.internal.aip">
+          <name>Application Interchange Profile (Contactless)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>D8</tag>
+          <value>1980</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value when CDA is supported and EMV mode is supported</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.appcontrol">
+          <name>Application Control (Contactless)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>D7</tag>
+          <value>00008000E602</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for dual interface device with Mastercard Proprietary Session Key Derivation (SKD), transaction log, M/Chip 4 host backwards compatibility,Set bit 'Disable Retrieval of Transaction Log Records' to disable reading of transaction log from contactless interface,Set 'Compute Cryptographic Checksum' bits to 10 when contactless magstripe mode is not supported,Reset bit 'Disable Retrieval of Transaction Log Records' to enable reading of transaction log from contactless interface</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.ciacdecline">
+          <name>Card Issuer Action Code (Contactless) - Decline</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>CF</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value when offline PIN is supported on the contact interface,Reset bit 'PIN Try Limit Exceeded' to force online when Offline PIN Try limit is exceeded</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.ciacdefault">
+          <name>Card Issuer Action Code (Contactless) - Default</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>CD</tag>
+          <value>0E0000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for online-only profile,Set bit 'PIN Try Limit Exceeded' to force online when Offline PIN Try limit is exceeded</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.ciaconline">
+          <name>Card Issuer Action Code (Contactless) - Online</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>CE</tag>
+          <value>0E0000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for online-only profile,Set bit 'PIN Try Limit Exceeded' to force online when Offline PIN Try limit is exceeded</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.acc1control">
+          <name>Accumulator 1 Control (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF12</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Accumulator 1 for online-only profile, but include accumulator in IApD for M/Chip 4 host backwards compatibility</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.acc1cvrdependencydata">
+          <name>Accumulator 1 CVR Dependency Data (Contactless)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF29</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.acc2control">
+          <name>Accumulator 2 Control (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF15</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Accumulator 2 for contactless transactions</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.acc2cvrdependencydata">
+          <name>Accumulator 2 CVR Dependency Data (Contactless)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2B</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.counter1control">
+          <name>Counter 1 Control (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF1B</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Counter 1 for online-only profile, but include counter in IApD for M/Chip 4 host backwards compatibility</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.counter1cvrdependencydata">
+          <name>Counter 1 CVR Dependency Data (Contactless)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2D</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.counter2control">
+          <name>Counter 2 Control (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF1E</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Counter 2 for contactless transactions</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.counter2cvrdependencydata">
+          <name>Counter 2 CVR Dependency Data (Contactless)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2F</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.cvrissuerdiscretionarydata">
+          <name>CVR Issuer Discretionary Data (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF3D</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to a dummy value when issuer host requires a backward compatibility mode</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.interfaceidentifier">
+          <name>Interface Identifier (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF3E</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Contactless interface identifier</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.mtacmv">
+          <name>Maximum Transaction Amount CVM (Contactless)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF23</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.mtanocmv">
+          <name>Maximum Transaction Amount NoCVM (Contactless)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF26</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.acsessionkeycounterlimit">
+          <name>AC Session Key Counter Limit (Contactless)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF34</tag>
+          <value>4E20</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of AC Session Key derivations over the contactless interface to 20.000 (= '4E20') for security reasons</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.smisessionkeycounterlimit">
+          <name>SMI Session Key Counter Limit (Contactless)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF33</tag>
+          <value>0400</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of SMI Session Key derivations over the contactless interface that are not followed by a successful validation of a Secure Messaging MAC to 1.024 (= '0400') for security reasons</commentary>
+        </dataElement>
+      </profile_data>
+    </interface>
+    <interface id="recordcontact">
+      <issuance_data>
+        <dataElement id="emvct.recordcontact.appeffectivedate">
+          <name>Application Effective Date</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>5F25</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.appexpirationdate">
+          <name>Application Expiration Date</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>5F24</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.apppan">
+          <name>Application Primary Account Number</name>
+          <type>cn19</type>
+          <outputType>h</outputType>
+          <tag>5A</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.cardholdername">
+          <name>Cardholder Name</name>
+          <type>a</type>
+          <outputType>h</outputType>
+          <tag>5F20</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.pansequencenumber">
+          <name>PAN Sequence Number</name>
+          <type>n2</type>
+          <outputType>h</outputType>
+          <tag>5F34</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.servicecode">
+          <name>Service Code</name>
+          <type>n4</type>
+          <outputType>h</outputType>
+          <tag>5F30</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.track2equivalentdata">
+          <name>Track 2 Equivalent Data</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>57</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.paymentaccountreference">
+          <name>Payment Account Reference (PAR)</name>
+          <type>a29</type>
+          <outputType>h</outputType>
+          <tag>9F24</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.issuerpublickeycertif">
+          <name>Issuer Public Key Certificate</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>90</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.issuerpublickeyexponent">
+          <name>Issuer Public Key Exponent</name>
+          <type>var.1-3</type>
+          <outputType>h</outputType>
+          <tag>9F32</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.issuerpublickeyremainder">
+          <name>Issuer Public Key Remainder</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>92</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.iccpublickeycertif">
+          <name>ICC Public Key Certificate</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F46</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.iccpublickeyexponent">
+          <name>ICC Public Key Exponent</name>
+          <type>var.1-3</type>
+          <outputType>h</outputType>
+          <tag>9F47</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.iccpublickeyremainder">
+          <name>ICC Public Key Remainder</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F48</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+      </issuance_data>
+      <profile_data>
+        <dataElement id="emvct.recordcontact.appcurrencycode">
+          <name>Application Currency Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F42</tag>
+          <value>0986</value>
+          <encrypt>False</encrypt>
+          <commentary>Currency code for Brazilian real</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.appversionnumber">
+          <name>Application Version Number</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F08</tag>
+          <value>0002</value>
+          <encrypt>False</encrypt>
+          <commentary>Version for Mastercard branded products</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.cdol1">
+          <name>Card Risk Management Data Object List 1 (CDOL1)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8C</tag>
+          <value>9F02069F03069F1A0295055F2A029A039C019F37049F35019F45029F4C089F34039F21039F7C14</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for M/Chip Advance</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.cdol2">
+          <name>Card Risk Management Data Object List 2 (CDOL2)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8D</tag>
+          <value>910A8A0295059F37049F4C08</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for M/Chip Advance</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.cvmlist">
+          <name>Cardholder Verification Method List</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8E</tag>
+          <value>0000000000000000020344030103</value>
+          <encrypt>False</encrypt>
+          <commentary>Amount X = zero,Amount Y = zero,CVM1 = Online PIN (Fail CVM),CVM2 = Offline Enciphered PIN,CVM3 = Offline Plaintext PIN</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.iacdefault">
+          <name>Issuer Action Code - Default</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0D</tag>
+          <value>BC50BC8800</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value,Set bit 'DDA Failed' as DDA is supported,Set bit 'CDA Failed' as CDA is supported,Set bit 'PIN Try Limit Exceeded' as Offline PIN is supported</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.iacdenial">
+          <name>Issuer Action Code - Denial</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0E</tag>
+          <value>0000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.iaconline">
+          <name>Issuer Action Code - Online</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0F</tag>
+          <value>BC70BC9800</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value,Set bit 'DDA Failed' as DDA is supported,Set bit 'CDA Failed' as CDA is supported,Set bit 'PIN Try Limit Exceeded' as Offline PIN is supported</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.issuercountrycode">
+          <name>Issuer Country Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>5F28</tag>
+          <value>0076</value>
+          <encrypt>False</encrypt>
+          <commentary>Country code for Brazil</commentary>
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.cakeyindex">
+          <name>Certification Authority Public Key Index</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>8F</tag>
+          <value>05</value>
+          <encrypt>False</encrypt>
+          <commentary>Index 05 (= 1.408 bits)</commentary>
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.sdataglist">
+          <name>Static Data Authentication Tag List</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>9F4A</tag>
+          <value>82</value>
+          <encrypt>False</encrypt>
+          <commentary>Mandatory value</commentary>
+        </dataElement>
+        <dataElement id="offlinecamddact.recordcontact.ddol">
+          <name>Dynamic Data Authentication Object List</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F49</tag>
+          <value>9F3704</value>
+          <encrypt>False</encrypt>
+          <commentary>DDA is supported</commentary>
+        </dataElement>
+        <dataElement id="emvnotauthct.recordcontact.appusagecontrol">
+          <name>Application Usage Control</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F07</tag>
+          <value>FFC0</value>
+          <encrypt>False</encrypt>
+          <commentary>Cash, goods, services and purchase with cash back</commentary>
+        </dataElement>
+      </profile_data>
+    </interface>
+    <interface id="recordcontactless">
+      <issuance_data>
+        <dataElement id="emvcl.recordcontactless.appexpirationdate">
+          <name>Application Expiration Date</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>5F24</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.apppan">
+          <name>Application Primary Account Number</name>
+          <type>cn19</type>
+          <outputType>h</outputType>
+          <tag>5A</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.pansequencenumber">
+          <name>PAN Sequence Number</name>
+          <type>n2</type>
+          <outputType>h</outputType>
+          <tag>5F34</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.track2equivalentdata">
+          <name>Track 2 Equivalent Data</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>57</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvnonmobilecl.recordcontactless.appeffectivedate">
+          <name>Application Effective Date</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>5F25</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvnonmobilecl.recordcontactless.paymentaccountreference">
+          <name>Payment Account Reference (PAR)</name>
+          <type>a29</type>
+          <outputType>h</outputType>
+          <tag>9F24</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.issuerpublickeycertif">
+          <name>Issuer Public Key Certificate</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>90</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.issuerpublickeyexponent">
+          <name>Issuer Public Key Exponent</name>
+          <type>var.1-3</type>
+          <outputType>h</outputType>
+          <tag>9F32</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.issuerpublickeyremainder">
+          <name>Issuer Public Key Remainder</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>92</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.iccpublickeycertif">
+          <name>ICC Public Key Certificate</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F46</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.iccpublickeyexponent">
+          <name>ICC Public Key Exponent</name>
+          <type>var.1-3</type>
+          <outputType>h</outputType>
+          <tag>9F47</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.iccpublickeyremainder">
+          <name>ICC Public Key Remainder</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F48</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+      </issuance_data>
+      <profile_data>
+        <dataElement id="emvcl.recordcontactless.appcurrencycode">
+          <name>Application Currency Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F42</tag>
+          <value>0986</value>
+          <encrypt>False</encrypt>
+          <commentary>Currency code for Brazilian real</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.appusagecontrol">
+          <name>Application Usage Control</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F07</tag>
+          <value>FFC0</value>
+          <encrypt>False</encrypt>
+          <commentary>Cash, goods, services and purchase with cash back</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.appversionnumber">
+          <name>Application Version Number</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F08</tag>
+          <value>0002</value>
+          <encrypt>False</encrypt>
+          <commentary>Version for Mastercard branded products</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.cdol1">
+          <name>Card Risk Management Data Object List 1 (CDOL1)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8C</tag>
+          <value>9F02069F03069F1A0295055F2A029A039C019F37049F35019F45029F4C089F34039F21039F7C14</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for M/Chip Advance</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.cdol2">
+          <name>Card Risk Management Data Object List 2 (CDOL2)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8D</tag>
+          <value>910A8A0295059F37049F4C08</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for M/Chip Advance</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.cvmlist">
+          <name>Cardholder Verification Method List</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8E</tag>
+          <value>000000000000000042031F03</value>
+          <encrypt>False</encrypt>
+          <commentary>Amount X = zero,Amount Y = zero,CVM1 = Online PIN (Apply Next),CVM2 = No CVM</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.iacdefault">
+          <name>Issuer Action Code - Default</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0D</tag>
+          <value>B450848000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value when CDA is supported,Set bit 'Transaction Exceeds Floor Limit' for Maestro or Cirrus</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.iacdenial">
+          <name>Issuer Action Code - Denial</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0E</tag>
+          <value>0000180000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for Maestro contactless</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.iaconline">
+          <name>Issuer Action Code - Online</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0F</tag>
+          <value>B470848000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value when CDA is supported</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.issuercountrycode">
+          <name>Issuer Country Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>5F28</tag>
+          <value>0076</value>
+          <encrypt>False</encrypt>
+          <commentary>Country code for Brazil</commentary>
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.cakeyindex">
+          <name>Certification Authority Public Key Index</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>8F</tag>
+          <value>05</value>
+          <encrypt>False</encrypt>
+          <commentary>Index 05 (= 1.408 bits)</commentary>
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.sdataglist">
+          <name>Static Data Authentication Tag List</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>9F4A</tag>
+          <value>82</value>
+          <encrypt>False</encrypt>
+          <commentary>Mandatory value</commentary>
+        </dataElement>
+      </profile_data>
+    </interface>
+  </application>
+  <application id="profile" name="mastercard (primary)">
+    <interface id="fci">
+      <profile_data>
+        <dataElement id="emv.fci.apppriorityindicator">
+          <name>Application Priority Indicator</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>87</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Priority for primary application</commentary>
+        </dataElement>
+        <dataElement id="emv.fci.applabel">
+          <name>Application Label</name>
+          <type>a1-16</type>
+          <outputType>h</outputType>
+          <tag>50</tag>
+          <value>4D617374657263617264</value>
+          <encrypt>False</encrypt>
+          <commentary>Mastercard</commentary>
+        </dataElement>
+        <dataElement id="emv.fci.dfname">
+          <name>Dedicated File Name</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>84</tag>
+          <value>A0000000041010</value>
+          <encrypt>False</encrypt>
+          <commentary>Mastercard AID</commentary>
+        </dataElement>
+        <dataElement id="emvnotauth.fci.thirdpartydata">
+          <name>Third Party Data</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F6E</tag>
+          <value>00760000303000</value>
+          <encrypt>False</encrypt>
+          <commentary>Country code for Brazil,Unique Identifier: '0000',Device Type: 20 - Card,Proprietary Data: '00' when unused,Update Device Type to 00 - Card</commentary>
+        </dataElement>
+        <dataElement id="mcalogsh.fci.logentry">
+          <name>Log Entry</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F4D</tag>
+          <value>0B0A</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value</commentary>
+        </dataElement>
+        <dataElement id="emvapplprefname.fci.apppreferredname">
+          <name>Application Preferred Name</name>
+          <type>a16</type>
+          <outputType>h</outputType>
+          <tag>9F12</tag>
+          <value>4D617374657263617264</value>
+          <encrypt>False</encrypt>
+          <commentary>By default, set to application label 'Mastercard'. Alternative value should be defined by issuer in card sample.</commentary>
+        </dataElement>
+        <dataElement id="emvapplprefname.fci.issuercodetableindex">
+          <name>Issuer Code Table Index</name>
+          <type>n2</type>
+          <outputType>h</outputType>
+          <tag>9F11</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to ISO/IEC 8859 Part 01: Latin-1 Western European</commentary>
+        </dataElement>
+        <dataElement id="emvlanguagepref.fci.languagepreference">
+          <name>Language Preference</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>5F2D</tag>
+          <value>7074656E6573</value>
+          <encrypt>False</encrypt>
+          <commentary>Language 1 = 'pt' for Portuguese,Language 2 = 'en' for English,Language 3 = 'es' for Spanish, Castilian</commentary>
+        </dataElement>
+      </profile_data>
+    </interface>
+    <interface id="internal">
+      <issuance_data>
+        <dataElement id="emvnonmobilesh.internal.alcd">
+          <name>Application Life Cycle Data</name>
+          <type>var.8</type>
+          <outputType>h</outputType>
+          <tag>9F7E</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcash.internal.referencepin">
+          <name>Reference PIN</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcalogsh.internal.logdatatable">
+          <name>Log Data Table</name>
+          <type>var.9</type>
+          <outputType>h</outputType>
+          <tag>DE</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcaxdaorpinkeysh.internal.lengthoficcpublickeymodulus">
+          <name>Length of ICC Public Key Modulus</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcaxdaorpinkeysh.internal.lengthoficcpinenciphpublickeymodulus">
+          <name>Length of ICC PIN Encipherment Public Key Modulus</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcadssh.internal.dspk">
+          <name>Data Storage Partial Key</name>
+          <type>var.12</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcadssh.internal.dsnbrofslot">
+          <name>Data Storage Number of Slots</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcalinkappsh.internal.linkedapplindex">
+          <name>Linked Application Index</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF73</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.internal.afl">
+          <name>Application File Locator (Contact)</name>
+          <type>n</type>
+          <outputType>h</outputType>
+          <tag>94</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcact.internal.acmasterkey">
+          <name>AC Master Key (Contact)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcact.internal.smimasterkey">
+          <name>SMI Master Key (Contact)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcact.internal.smcmasterkey">
+          <name>SMC Master Key (Contact)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcact.internal.iccdynamicnbrmasterkey">
+          <name>ICC Dynamic Number Master Key (Contact)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcact.internal.keyderivationindex">
+          <name>Key Derivation Index (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvnonmobilecl.internal.afl">
+          <name>Application File Locator (Contactless)</name>
+          <type>n</type>
+          <outputType>h</outputType>
+          <tag>D9</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.acmasterkey">
+          <name>AC Master Key (Contactless)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.smimasterkey">
+          <name>SMI Master Key (Contactless)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.smcmasterkey">
+          <name>SMC Master Key (Contactless)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.iccdynamicnbrmasterkey">
+          <name>ICC Dynamic Number Master Key (Contactless)</name>
+          <type>var.16</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.keyderivationindex">
+          <name>Key Derivation Index (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="mcacl.internal.readrecordfilter">
+          <name>Read Record Filter (Contactless)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>DF40</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+      </issuance_data>
+      <profile_data>
+        <dataElement id="emvnonmobilesh.internal.cdol1relateddatalength">
+          <name>CDOL1 Related Data Length</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>C7</tag>
+          <value>42</value>
+          <encrypt>False</encrypt>
+          <commentary>Length for M/Chip Advance</commentary>
+        </dataElement>
+        <dataElement id="emvnonmobilesh.internal.pintrycounter">
+          <name>PIN Try Counter</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>9F17</tag>
+          <value>03</value>
+          <encrypt>False</encrypt>
+          <commentary>Offline PIN is supported, same value as PIN Try Limit</commentary>
+        </dataElement>
+        <dataElement id="emvnonmobilesh.internal.previoustxnhistory">
+          <name>Previous Transaction History</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>default=00</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.atclimit">
+          <name>Application Transaction Counter Limit</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag />
+          <value>4E20</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of transactions processed by the application to 20.000 (='4E20') for security reasons</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc1currcode">
+          <name>Accumulator 1 Currency Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>C9</tag>
+          <value>0999</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to No Currency for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc1currconvtable">
+          <name>Accumulator 1 Currency Conversion Table</name>
+          <type>var.25</type>
+          <outputType>h</outputType>
+          <tag>D1</tag>
+          <value>09990001000999000100099900010009990001000999000100</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to dummy value for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc1lowerlimit">
+          <name>Accumulator 1 Lower Limit</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>CA</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for online-only profile</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc1upperlimit">
+          <name>Accumulator 1 Upper Limit</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>CB</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for online-only profile</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc2currcode">
+          <name>Accumulator 2 Currency Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF16</tag>
+          <value>0999</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to No Currency for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc2currconvtable">
+          <name>Accumulator 2 Currency Conversion Table</name>
+          <type>var.25</type>
+          <outputType>h</outputType>
+          <tag>DF17</tag>
+          <value>09990001000999000100099900010009990001000999000100</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to dummy value for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc2lowerlimit">
+          <name>Accumulator 2 Lower Limit</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF18</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.acc2upperlimit">
+          <name>Accumulator 2 Upper Limit</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF19</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for unused accumulator</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.additionalchecktable">
+          <name>Additional Check Table</name>
+          <type>var.18</type>
+          <outputType>h</outputType>
+          <tag>D3</tag>
+          <value>000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.counter1lowerlimit">
+          <name>Counter 1 Lower Limit</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>9F14</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for online-only profile</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.counter1upperlimit">
+          <name>Counter 1 Upper Limit</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>9F23</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for online-only profile</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.counter2lowerlimit">
+          <name>Counter 2 Lower Limit</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF1F</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for unused counter</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.counter2upperlimit">
+          <name>Counter 2 Upper Limit</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF21</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to zero for unused counter</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.crmcountrycode">
+          <name>Card Risk Management Country Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>C8</tag>
+          <value>0076</value>
+          <encrypt>False</encrypt>
+          <commentary>Country code for Brazil</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.cryptoversionnbr2x">
+          <name>Cryptogram Version Number V2.x</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag />
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>default=00</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.defaultarpc">
+          <name>Default ARPC Response Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>D6</tag>
+          <value>0010</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value to approve online transactions and do not reset counters</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.interfaceenableswitch">
+          <name>Interface Enabling Switch</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF30</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Enable only the contact interface</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.mtacurrencycode">
+          <name>Maximum Transaction Amount Currency Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF24</tag>
+          <value>0999</value>
+          <encrypt>False</encrypt>
+          <commentary>No currency code as Maximum Transaction Amount check is not used</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.nbrofdaysofflinelimit">
+          <name>Number of Days Offline Limit</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF27</tag>
+          <value>0000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=0000</commentary>
+        </dataElement>
+        <dataElement id="mcash.internal.pintrylimit">
+          <name>PIN Try Limit</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>C6</tag>
+          <value>03</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to 3 offline PIN attempts (a value of 3 or more can be used in card sample)</commentary>
+        </dataElement>
+        <dataElement id="mcalogsh.internal.logformat">
+          <name>Log Format</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F4F</tag>
+          <value>9F27019F02065F2A029A039F36029F5206DF3E019F21039F7C14</value>
+          <encrypt>False</encrypt>
+          <commentary>Default value for M/Chip Advance (up to four additional DOL elements (tag and length) can be added by issuer)</commentary>
+        </dataElement>
+        <dataElement id="mcapinencsh.internal.pindecipherrorcounterlimit">
+          <name>PIN Decipherments Error Counter Limit</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF36</tag>
+          <value>01F4</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of PIN decipherment errors to 500 (='01F4') for security reasons</commentary>
+        </dataElement>
+        <dataElement id="mcadssh.internal.dsmgmtcontrol">
+          <name>Data Storage Management Control</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF41</tag>
+          <value>20</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable integrated data storage</commentary>
+        </dataElement>
+        <dataElement id="mca123sh.internal.commoncurrconvtable">
+          <name>Common Currency Conversion Table</name>
+          <type>var.100</type>
+          <outputType>h</outputType>
+          <tag>D2</tag>
+          <value>09990001000999000100099900010009990001000999000100099900010009990001000999000100099900010009990001000999000100099900010009990001000999000100099900010009990001000999000100099900010009990001000999000100</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to dummy value for unused conversion table</commentary>
+        </dataElement>
+        <dataElement id="emvct.internal.aip">
+          <name>Application Interchange Profile (Contact)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>82</tag>
+          <value>3900</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value when CDA &amp; DDA are supported</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.appcontrol">
+          <name>Application Control (Contact)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>D5</tag>
+          <value>8C008200C602</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for semi grade card profile, Mastercard Proprietary Session Key Derivation (SKD), transaction log, M/Chip 4 host backwards compatibility,Set bit 'Offline Plaintext PIN Verification' as Offline Plaintext PIN is supported,Set bit 'Offline Encrypted PIN Verification' as Offline Enciphered PIN is supported,Set bit 'Enable Alternate Interface After TC Generated' to enable the contactless interface after the first approved contact transaction</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.ciacdecline">
+          <name>Card Issuer Action Code (Contact) - Decline</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>C3</tag>
+          <value>100000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value,Set bit 'Offline PIN Verification Failed' to decline offline when PIN fails</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.ciacdefault">
+          <name>Card Issuer Action Code (Contact) - Default</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>C4</tag>
+          <value>0F5000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value to decline offline when upper limits are exceeded,Set bit 'International Transaction' for online-only profile,Set bit 'Domestic Transaction' for online-only profile,Set bit 'Offline PIN Verification Failed' as Offline PIN is supported,Set bit 'PIN Try Limit Exceeded' as Offline PIN is supported,Set bit 'Terminal Erroneously Considers Offline PIN OK' as Offline PIN is supported,Reset bit 'Offline PIN Verification Failed' to decline offline when PIN fails</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.ciaconline">
+          <name>Card Issuer Action Code (Contact) - Online</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>C5</tag>
+          <value>2FFB00</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value to send transaction online when limits are exceeded,Set bit 'International Transaction' to send international transaction online,Set bit 'Domestic Transaction' to send domestic transaction online,Set bit 'Offline PIN Verification not Performed' as Offline PIN is supported,Set bit 'Offline PIN Verification Failed' as Offline PIN is supported,Set bit 'PIN Try Limit Exceeded' as Offline PIN is supported,Set bit 'Terminal Erroneously Considers Offline PIN OK' as Offline PIN is supported,Reset bit 'Offline PIN Verification Failed' to decline offline when PIN fails</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.acc1control">
+          <name>Accumulator 1 Control (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF11</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Accumulator 1 for online-only profile, but include accumulator in IApD for M/Chip 4 host backwards compatibility</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.acc1cvrdependencydata">
+          <name>Accumulator 1 CVR Dependency Data (Contact)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF28</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.acc2control">
+          <name>Accumulator 2 Control (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF14</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Accumulator 2 for contact transactions</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.acc2cvrdependencydata">
+          <name>Accumulator 2 CVR Dependency Data (Contact)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2A</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.counter1control">
+          <name>Counter 1 Control (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF1A</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Counter 1 for online-only profile, but include counter in IApD for M/Chip 4 host backwards compatibility</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.counter1cvrdependencydata">
+          <name>Counter 1 CVR Dependency Data (Contact)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2C</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.counter2control">
+          <name>Counter 2 Control (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF1D</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Counter 2 for contact transactions</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.counter2cvrdependencydata">
+          <name>Counter 2 CVR Dependency Data (Contact)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2E</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.cvrissuerdiscretionarydata">
+          <name>CVR Issuer Discretionary Data (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF3C</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to a dummy value when issuer host requires a backward compatibility mode</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.interfaceidentifier">
+          <name>Interface Identifier (Contact)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF3E</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Contact interface identifier</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.mtacmv">
+          <name>Maximum Transaction Amount CVM (Contact)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF22</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.mtanocmv">
+          <name>Maximum Transaction Amount NoCVM (Contact)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF25</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000000000</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.acsessionkeycounterlimit">
+          <name>AC Session Key Counter Limit (Contact)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF3A</tag>
+          <value>4E20</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of AC Session Key derivations over the contact interface to 20.000 (= '4E20') for security reasons</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.smisessionkeycounterlimit">
+          <name>SMI Session Key Counter Limit (Contact)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF32</tag>
+          <value>0400</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of SMI Session Key derivations over the contact interface that are not followed by a successful validation of a Secure Messaging MAC to 1.024 (= '0400') for security reasons</commentary>
+        </dataElement>
+        <dataElement id="mcact.internal.readrecordfilter">
+          <name>Read Record Filter (Contact)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>DF3F</tag>
+          <value>00000000</value>
+          <encrypt>False</encrypt>
+          <commentary>No records filtered over the contact interface</commentary>
+        </dataElement>
+        <dataElement id="emvnonmobilecl.internal.aip">
+          <name>Application Interchange Profile (Contactless)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>D8</tag>
+          <value>1980</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value when CDA is supported and EMV mode is supported</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.appcontrol">
+          <name>Application Control (Contactless)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>D7</tag>
+          <value>00008000E602</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for dual interface device with Mastercard Proprietary Session Key Derivation (SKD), transaction log, M/Chip 4 host backwards compatibility,Set bit 'Disable Retrieval of Transaction Log Records' to disable reading of transaction log from contactless interface,Set 'Compute Cryptographic Checksum' bits to 10 when contactless magstripe mode is not supported,Reset bit 'Disable Retrieval of Transaction Log Records' to enable reading of transaction log from contactless interface</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.ciacdecline">
+          <name>Card Issuer Action Code (Contactless) - Decline</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>CF</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value when offline PIN is supported on the contact interface,Reset bit 'PIN Try Limit Exceeded' to force online when Offline PIN Try limit is exceeded</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.ciacdefault">
+          <name>Card Issuer Action Code (Contactless) - Default</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>CD</tag>
+          <value>0E0000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for online-only profile,Set bit 'PIN Try Limit Exceeded' to force online when Offline PIN Try limit is exceeded</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.ciaconline">
+          <name>Card Issuer Action Code (Contactless) - Online</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>CE</tag>
+          <value>0E0000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for online-only profile,Set bit 'PIN Try Limit Exceeded' to force online when Offline PIN Try limit is exceeded</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.acc1control">
+          <name>Accumulator 1 Control (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF12</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Accumulator 1 for online-only profile, but include accumulator in IApD for M/Chip 4 host backwards compatibility</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.acc1cvrdependencydata">
+          <name>Accumulator 1 CVR Dependency Data (Contactless)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF29</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.acc2control">
+          <name>Accumulator 2 Control (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF15</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Accumulator 2 for contactless transactions</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.acc2cvrdependencydata">
+          <name>Accumulator 2 CVR Dependency Data (Contactless)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2B</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.counter1control">
+          <name>Counter 1 Control (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF1B</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Counter 1 for online-only profile, but include counter in IApD for M/Chip 4 host backwards compatibility</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.counter1cvrdependencydata">
+          <name>Counter 1 CVR Dependency Data (Contactless)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2D</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.counter2control">
+          <name>Counter 2 Control (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF1E</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Disable Counter 2 for contactless transactions</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.counter2cvrdependencydata">
+          <name>Counter 2 CVR Dependency Data (Contactless)</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>DF2F</tag>
+          <value>000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.cvrissuerdiscretionarydata">
+          <name>CVR Issuer Discretionary Data (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF3D</tag>
+          <value>00</value>
+          <encrypt>False</encrypt>
+          <commentary>Set to a dummy value when issuer host requires a backward compatibility mode</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.interfaceidentifier">
+          <name>Interface Identifier (Contactless)</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>DF3E</tag>
+          <value>01</value>
+          <encrypt>False</encrypt>
+          <commentary>Contactless interface identifier</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.mtacmv">
+          <name>Maximum Transaction Amount CVM (Contactless)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF23</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.mtanocmv">
+          <name>Maximum Transaction Amount NoCVM (Contactless)</name>
+          <type>var.6</type>
+          <outputType>h</outputType>
+          <tag>DF26</tag>
+          <value>000000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>default=000000000000</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.acsessionkeycounterlimit">
+          <name>AC Session Key Counter Limit (Contactless)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF34</tag>
+          <value>4E20</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of AC Session Key derivations over the contactless interface to 20.000 (= '4E20') for security reasons</commentary>
+        </dataElement>
+        <dataElement id="mcacl.internal.smisessionkeycounterlimit">
+          <name>SMI Session Key Counter Limit (Contactless)</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>DF33</tag>
+          <value>0400</value>
+          <encrypt>False</encrypt>
+          <commentary>Limit the number of SMI Session Key derivations over the contactless interface that are not followed by a successful validation of a Secure Messaging MAC to 1.024 (= '0400') for security reasons</commentary>
+        </dataElement>
+      </profile_data>
+    </interface>
+    <interface id="recordcontact">
+      <issuance_data>
+        <dataElement id="emvct.recordcontact.appeffectivedate">
+          <name>Application Effective Date</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>5F25</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.appexpirationdate">
+          <name>Application Expiration Date</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>5F24</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.apppan">
+          <name>Application Primary Account Number</name>
+          <type>cn19</type>
+          <outputType>h</outputType>
+          <tag>5A</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.cardholdername">
+          <name>Cardholder Name</name>
+          <type>a</type>
+          <outputType>h</outputType>
+          <tag>5F20</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.pansequencenumber">
+          <name>PAN Sequence Number</name>
+          <type>n2</type>
+          <outputType>h</outputType>
+          <tag>5F34</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.servicecode">
+          <name>Service Code</name>
+          <type>n4</type>
+          <outputType>h</outputType>
+          <tag>5F30</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.track2equivalentdata">
+          <name>Track 2 Equivalent Data</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>57</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvct.recordcontact.paymentaccountreference">
+          <name>Payment Account Reference (PAR)</name>
+          <type>a29</type>
+          <outputType>h</outputType>
+          <tag>9F24</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.issuerpublickeycertif">
+          <name>Issuer Public Key Certificate</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>90</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.issuerpublickeyexponent">
+          <name>Issuer Public Key Exponent</name>
+          <type>var.1-3</type>
+          <outputType>h</outputType>
+          <tag>9F32</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.issuerpublickeyremainder">
+          <name>Issuer Public Key Remainder</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>92</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.iccpublickeycertif">
+          <name>ICC Public Key Certificate</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F46</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.iccpublickeyexponent">
+          <name>ICC Public Key Exponent</name>
+          <type>var.1-3</type>
+          <outputType>h</outputType>
+          <tag>9F47</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.iccpublickeyremainder">
+          <name>ICC Public Key Remainder</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F48</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+      </issuance_data>
+      <profile_data>
+        <dataElement id="emvct.recordcontact.appcurrencycode">
+          <name>Application Currency Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F42</tag>
+          <value>0986</value>
+          <encrypt>False</encrypt>
+          <commentary>Currency code for Brazilian real</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.appversionnumber">
+          <name>Application Version Number</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F08</tag>
+          <value>0002</value>
+          <encrypt>False</encrypt>
+          <commentary>Version for Mastercard branded products</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.cdol1">
+          <name>Card Risk Management Data Object List 1 (CDOL1)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8C</tag>
+          <value>9F02069F03069F1A0295055F2A029A039C019F37049F35019F45029F4C089F34039F21039F7C14</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for M/Chip Advance</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.cdol2">
+          <name>Card Risk Management Data Object List 2 (CDOL2)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8D</tag>
+          <value>910A8A0295059F37049F4C08</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for M/Chip Advance</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.cvmlist">
+          <name>Cardholder Verification Method List</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8E</tag>
+          <value>000000000000000042014403410342031E031F03</value>
+          <encrypt>False</encrypt>
+          <commentary>Amount X = zero,Amount Y = zero,CVM1 = Online PIN at ATM,CVM2 = Offline Enciphered PIN,CVM3 = Offline Plaintext PIN,CVM4 = Online PIN (Apply Next),CVM5 = Signature,CVM6 = No CVM</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.iacdefault">
+          <name>Issuer Action Code - Default</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0D</tag>
+          <value>BC50BC8800</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value,Set bit 'DDA Failed' as DDA is supported,Set bit 'CDA Failed' as CDA is supported,Set bit 'PIN Try Limit Exceeded' as Offline PIN is supported</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.iacdenial">
+          <name>Issuer Action Code - Denial</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0E</tag>
+          <value>0000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.iaconline">
+          <name>Issuer Action Code - Online</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0F</tag>
+          <value>BC70BC9800</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value,Set bit 'DDA Failed' as DDA is supported,Set bit 'CDA Failed' as CDA is supported,Set bit 'PIN Try Limit Exceeded' as Offline PIN is supported</commentary>
+        </dataElement>
+        <dataElement id="emvct.recordcontact.issuercountrycode">
+          <name>Issuer Country Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>5F28</tag>
+          <value>0076</value>
+          <encrypt>False</encrypt>
+          <commentary>Country code for Brazil</commentary>
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.cakeyindex">
+          <name>Certification Authority Public Key Index</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>8F</tag>
+          <value>05</value>
+          <encrypt>False</encrypt>
+          <commentary>Index 05 (= 1.408 bits)</commentary>
+        </dataElement>
+        <dataElement id="offlinecamct.recordcontact.sdataglist">
+          <name>Static Data Authentication Tag List</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>9F4A</tag>
+          <value>82</value>
+          <encrypt>False</encrypt>
+          <commentary>Mandatory value</commentary>
+        </dataElement>
+        <dataElement id="offlinecamddact.recordcontact.ddol">
+          <name>Dynamic Data Authentication Object List</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F49</tag>
+          <value>9F3704</value>
+          <encrypt>False</encrypt>
+          <commentary>DDA is supported</commentary>
+        </dataElement>
+        <dataElement id="emvnotauthct.recordcontact.appusagecontrol">
+          <name>Application Usage Control</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F07</tag>
+          <value>FF00</value>
+          <encrypt>False</encrypt>
+          <commentary>Cash, goods and services,Reset bit 'Domestic Cash Back Allowed',Reset bit 'International Cash Back Allowed'</commentary>
+        </dataElement>
+      </profile_data>
+    </interface>
+    <interface id="recordcontactless">
+      <issuance_data>
+        <dataElement id="emvcl.recordcontactless.appexpirationdate">
+          <name>Application Expiration Date</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>5F24</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.apppan">
+          <name>Application Primary Account Number</name>
+          <type>cn19</type>
+          <outputType>h</outputType>
+          <tag>5A</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.pansequencenumber">
+          <name>PAN Sequence Number</name>
+          <type>n2</type>
+          <outputType>h</outputType>
+          <tag>5F34</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.track2equivalentdata">
+          <name>Track 2 Equivalent Data</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>57</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvnonmobilecl.recordcontactless.appeffectivedate">
+          <name>Application Effective Date</name>
+          <type>var.3</type>
+          <outputType>h</outputType>
+          <tag>5F25</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="emvnonmobilecl.recordcontactless.paymentaccountreference">
+          <name>Payment Account Reference (PAR)</name>
+          <type>a29</type>
+          <outputType>h</outputType>
+          <tag>9F24</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.issuerpublickeycertif">
+          <name>Issuer Public Key Certificate</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>90</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.issuerpublickeyexponent">
+          <name>Issuer Public Key Exponent</name>
+          <type>var.1-3</type>
+          <outputType>h</outputType>
+          <tag>9F32</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.issuerpublickeyremainder">
+          <name>Issuer Public Key Remainder</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>92</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.iccpublickeycertif">
+          <name>ICC Public Key Certificate</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F46</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.iccpublickeyexponent">
+          <name>ICC Public Key Exponent</name>
+          <type>var.1-3</type>
+          <outputType>h</outputType>
+          <tag>9F47</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.iccpublickeyremainder">
+          <name>ICC Public Key Remainder</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>9F48</tag>
+          <value />
+          <encrypt>False</encrypt>
+          <commentary />
+        </dataElement>
+      </issuance_data>
+      <profile_data>
+        <dataElement id="emvcl.recordcontactless.appcurrencycode">
+          <name>Application Currency Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F42</tag>
+          <value>0986</value>
+          <encrypt>False</encrypt>
+          <commentary>Currency code for Brazilian real</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.appusagecontrol">
+          <name>Application Usage Control</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F07</tag>
+          <value>FF00</value>
+          <encrypt>False</encrypt>
+          <commentary>Cash, goods and services,Reset bit 'Domestic Cashback Allowed',Reset bit 'International Cashback Allowed'</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.appversionnumber">
+          <name>Application Version Number</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>9F08</tag>
+          <value>0002</value>
+          <encrypt>False</encrypt>
+          <commentary>Version for Mastercard branded products</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.cdol1">
+          <name>Card Risk Management Data Object List 1 (CDOL1)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8C</tag>
+          <value>9F02069F03069F1A0295055F2A029A039C019F37049F35019F45029F4C089F34039F21039F7C14</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for M/Chip Advance</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.cdol2">
+          <name>Card Risk Management Data Object List 2 (CDOL2)</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8D</tag>
+          <value>910A8A0295059F37049F4C08</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value for M/Chip Advance</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.cvmlist">
+          <name>Cardholder Verification Method List</name>
+          <type>var.</type>
+          <outputType>h</outputType>
+          <tag>8E</tag>
+          <value>000000000000000042031E031F03</value>
+          <encrypt>False</encrypt>
+          <commentary>Amount X = zero,Amount Y = zero,CVM1 = Online PIN (Apply Next),CVM2 = Signature,CVM3 = No CVM</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.iacdefault">
+          <name>Issuer Action Code - Default</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0D</tag>
+          <value>B450840000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value when CDA is supported</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.iacdenial">
+          <name>Issuer Action Code - Denial</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0E</tag>
+          <value>0000000000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.iaconline">
+          <name>Issuer Action Code - Online</name>
+          <type>var.5</type>
+          <outputType>h</outputType>
+          <tag>9F0F</tag>
+          <value>B470848000</value>
+          <encrypt>False</encrypt>
+          <commentary>Recommended value when CDA is supported</commentary>
+        </dataElement>
+        <dataElement id="emvcl.recordcontactless.issuercountrycode">
+          <name>Issuer Country Code</name>
+          <type>var.2</type>
+          <outputType>h</outputType>
+          <tag>5F28</tag>
+          <value>0076</value>
+          <encrypt>False</encrypt>
+          <commentary>Country code for Brazil</commentary>
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.cakeyindex">
+          <name>Certification Authority Public Key Index</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>8F</tag>
+          <value>05</value>
+          <encrypt>False</encrypt>
+          <commentary>Index 05 (= 1.408 bits)</commentary>
+        </dataElement>
+        <dataElement id="offlinecamcl.recordcontactless.sdataglist">
+          <name>Static Data Authentication Tag List</name>
+          <type>var.1</type>
+          <outputType>h</outputType>
+          <tag>9F4A</tag>
+          <value>82</value>
+          <encrypt>False</encrypt>
+          <commentary>Mandatory value</commentary>
+        </dataElement>
+      </profile_data>
+    </interface>
+  </application>
+</profile>

@@ -1,0 +1,8 @@
+C:\Users\fraca\Documents\tcc2022\Estudando wf c#\MasterMultiplo\MasterMultiplo\bin\Debug\MasterMultiplo.exe.config
+C:\Users\fraca\Documents\tcc2022\Estudando wf c#\MasterMultiplo\MasterMultiplo\bin\Debug\MasterMultiplo.exe
+C:\Users\fraca\Documents\tcc2022\Estudando wf c#\MasterMultiplo\MasterMultiplo\bin\Debug\MasterMultiplo.pdb
+C:\Users\fraca\Documents\tcc2022\Estudando wf c#\MasterMultiplo\MasterMultiplo\obj\Debug\MasterMultiplo.csproj.AssemblyReference.cache
+C:\Users\fraca\Documents\tcc2022\Estudando wf c#\MasterMultiplo\MasterMultiplo\obj\Debug\MasterMultiplo.csproj.SuggestedBindingRedirects.cache
+C:\Users\fraca\Documents\tcc2022\Estudando wf c#\MasterMultiplo\MasterMultiplo\obj\Debug\MasterMultiplo.csproj.CoreCompileInputs.cache
+C:\Users\fraca\Documents\tcc2022\Estudando wf c#\MasterMultiplo\MasterMultiplo\obj\Debug\MasterMultiplo.exe
+C:\Users\fraca\Documents\tcc2022\Estudando wf c#\MasterMultiplo\MasterMultiplo\obj\Debug\MasterMultiplo.pdb
